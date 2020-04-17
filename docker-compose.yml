@@ -1,0 +1,6 @@
+version: '3.4'
+services:
+    fizzbuzz:
+        image: isaac/fizzbuzz
+        build:
+            context: .
