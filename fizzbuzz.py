@@ -1,16 +1,14 @@
-def calculate_value(number):
-    value = ''
-    if number % 5 == 0:
-        value += 'fizz'
-    if number % 3 == 0:
-        value += 'buzz'
-    if number == 0 or value == '':
-        value = str(number)
-    return value
+'''
+This module is the main entrypoint into fizzbuzz
+'''
+import fizzbuzz_calculator
 
 def fizz_buzz_generator(upper_limit):
+    '''
+    This generator is used to return the fizzbuzz values for a range
+    '''
     for i in range(upper_limit):
-        yield calculate_value(i)
+        yield fizzbuzz_calculator.calculate(i)
 
 for x in fizz_buzz_generator(101):
     print(x)
