@@ -11,6 +11,8 @@ def calculate_fizzbuzz(number):
         value += 'fizz'
     if number % 5 == 0:
         value += 'buzz'
+    if number % 5 == 0:
+        value += 'BANG'
     if number == 0 or value == '':
         value = str(number)
     return value
